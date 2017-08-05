@@ -6,6 +6,19 @@
 
 /* ==================== Layout ==================== */
 
+html, body, .capa {
+	height: 100%;
+}
+
+body {
+	
+	background: url('imagens/capa.png'), 
+							url('imagens/ruido.png'),
+							linear-gradient(50deg, #ff4169, #7c26f8 100%);
+	background-attachment: fixed;
+	font-family: Helvetica,Arial, sans-serif;
+	color:white;
+}
 
 /* Navegation bar */
 .img-logo {
@@ -42,4 +55,53 @@ nav.navbar-transparente {
 	color: #9bf0e1;
 }
 
+/* imagem de capa */
+.capa {
+	display: table;
+	width: 100%;
+	border: 1px solid black;	
+}
+
+.capa-texto {
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+
+}
+
+/* Botões */
+.btn-custom {
+	border-radius: 100px;
+	margin: 0 30px;
+	color: white;
+}
+
+.btn-green {
+	background-color: green;
+	transition: background-color 0.3s;
+}
+
+.btn-white {
+	border: 1px solid white;
+	color: white;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-green:hover {
+	color: white;
+	background-color: #045604;
+	transition: background-color 0.3s;
+}
+
+.btn-white:hover {
+	color:black;
+	background-color: white;
+	transition: background-color 0.3s, color 0.3s;
+}
 /* ==================== Tipografia ==================== */
+h1 {
+	font-size: 100px;
+	font-weight: 800;
+	letter-spacing: -3px;
+	margin-bottom: 50px;
+}
